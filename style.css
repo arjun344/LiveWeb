@@ -14,3 +14,19 @@
 		transform: rotate(1440deg);
 	}
 }
+
+#first {
+
+	position: fixed;
+	margin-top: 20px;
+	float: left;
+	z-index: 10;
+}
+
+#second {
+
+	position: fixed;
+	margin-top: 100px;
+	float: right;
+	z-index: 10;
+}

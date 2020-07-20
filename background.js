@@ -11,3 +11,14 @@ chrome.tabs.onActivated.addListener(tab => {
 	})
  
 });
+
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+
+	sendResponse({message:'yo i got your message'});
+	console.log(request.message);
+	chrome.storage.local.get("data", value => {
+
+		console.log(value);
+	});
+
+});
